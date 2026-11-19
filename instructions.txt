@@ -1,0 +1,43 @@
+HOW TO USE
+
+1. Open Calculator.exe.
+2. In Gallery / capture, click Choose / open library. Pick a save folder.
+3. Click Preview / draw area. Bring the target content into view within 2 seconds.
+4. Drag a rectangle around the text. Click Use selection.
+5. Open Gemini / speech. Enter your API key and click Save key.
+   WARNING: The launcher saves the key in plaintext on this computer.
+6. Select a model. Check its pricing and your account quota.
+7. Edit the default prompt. Click Save prompt + model.
+8. Set speech options: read answers, repeat count OR loop, and voice speed.
+   Click Apply + save. Stop speech silences the current answer.
+9. Return to Gallery / capture. Set the automatic interval (minimum 10 seconds),
+   cooldown, and maximum attempts. Click Apply + save.
+10. Check Automatic answer and approve text uploads to Google.
+    Leave it unchecked to capture without automatic sending.
+11. At the bottom, optionally check Calculator view when Start capture is clicked.
+    Set warm-up seconds. Click Save view + warm-up.
+12. Click Start capture. Prepare the screen during warm-up.
+    OCR initialization may add time. A recent capture may require more waiting.
+13. Browse saved screenshots. OCR text and Gemini history appear below the image.
+    Search finds words in OCR text and saved answers.
+14. Right-click a screenshot to resend its OCR to Gemini or speak its saved answer.
+15. For a manual question, use Gemini / speech. Type or append selected OCR,
+    then click Queue send to Gemini and approve.
+16. Click Stop capture / pending sends (or Stop in calculator view) to stop.
+    An active API request may finish and its answer will be saved.
+17. If a red error appears, capture and queued sending pause. Fix the error.
+    Click Start capture to retry, or explicitly resend a screenshot.
+18. To delete, stop capture/pending sends and wait for the active request.
+    Right-click a screenshot or use Delete all. Confirm permanent deletion.
+19. Close the app when finished. Saved captures and answers remain in the library.
+
+NOTES
+- Free usage is not guaranteed. Retries can duplicate API usage.
+- Cooldown begins after the API attempt finishes, not after speech finishes.
+- A new answer replaces the old speech loop. Click Apply + save after changing speech settings.
+- Automatic mode starts off after reopening. Old requests do not resume automatically.
+- Re-select the capture area if the window moves or display resolution changes.
+- Calculator view changes appearance only; it does not hide the process.
+- If using Python instead of the EXE, keep both scripts together and run:
+  py calculator_launcher.py
+- If the view/warm-up controls are missing, run the launcher-built EXE, not the base script.
