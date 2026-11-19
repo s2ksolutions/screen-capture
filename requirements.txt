@@ -1,0 +1,18 @@
+# Windows runtime dependencies
+# Install in a clean virtual environment. Versions are intentionally unpinned.
+dxcam
+Pillow
+numpy
+opencv-python
+rapidocr
+onnxruntime
+google-genai
+pywin32
+
+# Build tools
+pyinstaller
+pyinstaller-hooks-contrib
+
+# Optional for running capture_gallery.py directly with Windows credential storage.
+# The recommended launcher overrides storage to use plaintext JSON.
+keyring
